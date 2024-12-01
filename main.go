@@ -11,7 +11,7 @@ import (
  */
 
 func main() {
-	fmt.Println("Starting The AdventOfCode24 Script")
+	fmt.Println("Starting The AdventOfCode2024 Script")
 
 	// CHOOSE SETTINGS
 	m := 1 // 0 = Test Input | 1 = Actual Input

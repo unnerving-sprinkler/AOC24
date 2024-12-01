@@ -3,7 +3,7 @@
 package day01
 
 import (
-	"fmt"
+	//util "AOC23/programs"
 	"time"
 )
 
@@ -20,7 +20,6 @@ func Day1a(m int) (int, time.Duration) {
 	//Setup VARS For Today
 
 	//Days Program
-	fmt.Printf("This is a test")
 
 	return 0, time.Since(start)
 }
