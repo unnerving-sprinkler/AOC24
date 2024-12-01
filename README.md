@@ -1,2 +1,21 @@
-# AOC24
-My Advent Of Code 2024 Submission
+# AOC23
+
+2024 AOC 
+
+https://adventofcode.com/2023
+
+# Current Progress
+| Day        | Puzzle1           | Puzzle2  | Day        | Puzzle1           | Puzzle2  |
+| ------------- |:-------------:| :-----:| ------------- |:-------------:| :-----:|
+| 01            |            |      | 11| |
+| 02            |            |      |12 | |
+| 03            |            |         |13 | |
+| 04            |            |         |14 | |
+| 05            |            |       |15 | |
+| 06            |              |          |16 | |
+| 07            |              |          |17 | |
+| 08            |              |          |18 | |
+| 09            |              |          |19 | |
+| 10            |              |          |20 | |
+
+* Needed To Get Some Help
