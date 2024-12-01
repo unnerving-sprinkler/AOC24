@@ -1,8 +1,8 @@
-# AOC23
+# AOC24
 
 2024 AOC 
 
-https://adventofcode.com/2023
+https://adventofcode.com/2024
 
 # Current Progress
 | Day        | Puzzle1           | Puzzle2  | Day        | Puzzle1           | Puzzle2  |
@@ -18,4 +18,4 @@ https://adventofcode.com/2023
 | 09            |              |          |19 | |
 | 10            |              |          |20 | |
 
-* Needed To Get Some Help
+\* Needed To Get Some Help
