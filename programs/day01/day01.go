@@ -26,16 +26,16 @@ func Day1a(m int) (int, time.Duration) {
 
 	//Days Program
 	for i := 0; i < len(lines); i++ {
-		splitline := util.Splitlines(lines[i], " ")
-		firstnumbers = append(firstnumbers, util.StringtoNumber(splitline[0]))
+		splitline := util.Splitlines(lines[i], " ")                            //Split Line Into Parts
+		firstnumbers = append(firstnumbers, util.StringtoNumber(splitline[0])) //Convert Strings Into INT
 		secondnumbers = append(secondnumbers, util.StringtoNumber(splitline[1]))
 	}
 
-	sort.Ints(firstnumbers)
+	sort.Ints(firstnumbers) //Use GO to Organize
 	sort.Ints(secondnumbers)
 
 	for i := 0; i < len(firstnumbers); i++ {
-		score += math.Abs(float64(firstnumbers[i]) - float64(secondnumbers[i]))
+		score += math.Abs(float64(firstnumbers[i]) - float64(secondnumbers[i])) //Do Scoring
 	}
 
 	return int(score), time.Since(start)
