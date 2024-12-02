@@ -20,6 +20,6 @@ https://adventofcode.com/2024
 
 \* Needed To Get Some Help
 
-#Comments
-* -Day 01: Easy Day Good Start to AOC (32 min)
-* -Day 02: Not too hard. Not proud to admit how long it took to figure ou removing one piece for array at a time. (60 min)
+# Comments
+* Day 01: Easy Day Good Start to AOC (32 min)
+* Day 02: Not too hard. Not proud to admit how long it took to figure ou removing one piece for array at a time. (60 min)
