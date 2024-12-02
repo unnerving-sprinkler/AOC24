@@ -8,7 +8,7 @@ https://adventofcode.com/2024
 | Day        | Puzzle1           | Puzzle2  | Day        | Puzzle1           | Puzzle2  |
 | ------------- |:-------------:| :-----:| ------------- |:-------------:| :-----:|
 | 01            |      ⭐       |    ⭐  | 11|            |
-| 02            |            |      |12 | |
+| 02            |       ⭐     |⭐      |12 | |
 | 03            |            |         |13 | |
 | 04            |            |         |14 | |
 | 05            |            |       |15 | |
@@ -19,3 +19,7 @@ https://adventofcode.com/2024
 | 10            |              |          |20 | |
 
 \* Needed To Get Some Help
+
+#Comments
+-Day 01: Easy Day Good Start to AOC (32 min)
+-Day 02: Not too hard. Not proud to admit how long it took to figure ou removing one piece for array at a time. (60 min)
