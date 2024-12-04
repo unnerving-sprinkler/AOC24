@@ -11,12 +11,7 @@ import (
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 03A ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day3a(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_03/day_03_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_03/day_03_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_03/day_03_actual.txt", "inputdata/day_03/day_03_test.txt", m)
 
 	//Setup VARS For Today
 	var matchingexpressions []string
@@ -38,12 +33,7 @@ func Day3a(m int) (int, time.Duration) {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 03B ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day3b(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_03/day_03_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_03/day_03_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_03/day_03_actual.txt", "inputdata/day_03/day_03_test.txt", m)
 
 	//Setup VARS For Today
 	score := 0

@@ -12,12 +12,7 @@ import (
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 01A ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day1a(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_01/day_01_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_01/day_01_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_01/day_01_actual.txt", "inputdata/day_01/day_01_test.txt", m)
 
 	//Setup VARS For Today
 	var firstnumbers []int
@@ -44,14 +39,9 @@ func Day1a(m int) (int, time.Duration) {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 01B ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day1b(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_01/day_01_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_01/day_01_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_01/day_01_actual.txt", "inputdata/day_01/day_01_test.txt", m)
 
-	//Setup VARS For Today
+	//Setu p VARS For Today
 	var firstnumbers []int
 	var secondnumbers []int
 	var score int

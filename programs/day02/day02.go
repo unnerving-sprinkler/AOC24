@@ -11,12 +11,7 @@ import (
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 02A ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day2a(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_02/day_02_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_02/day_02_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_02/day_02_actual.txt", "inputdata/day_02/day_02_test.txt", m)
 
 	//Setup VARS For Today
 	var report [][]int
@@ -64,7 +59,7 @@ func Day2a(m int) (int, time.Duration) {
 
 		}
 
-		if isvalidresult == true { //Add Score Points
+		if isvalidresult { //Add Score Points
 			score += 1
 		}
 
@@ -76,12 +71,7 @@ func Day2a(m int) (int, time.Duration) {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 02B ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day2b(m int) (int, time.Duration) {
 	start := time.Now()
-	var lines []string
-	if m == 0 {
-		lines = util.Returnlines("inputdata/day_02/day_02_test.txt")
-	} else {
-		lines = util.Returnlines("inputdata/day_02/day_02_actual.txt")
-	}
+	lines := util.Returnlines("inputdata/day_02/day_02_actual.txt", "inputdata/day_02/day_02_test.txt", m)
 
 	//Setup VARS For Today
 	var report [][]int

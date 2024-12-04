@@ -7,9 +7,15 @@ import (
 	"strings"
 )
 
-func Returnlines(filepath string) []string {
-	var lines []string
+func Returnlines(filepathactual string, filepathtest string, m int) []string {
+	var filepath string
+	if m == 0 {
+		filepath = filepathtest
+	} else {
+		filepath = filepathactual
+	}
 
+	var lines []string
 	//Logic
 	file, _ := os.Open(filepath)      //Open File Ignoring Errors
 	scanner := bufio.NewScanner(file) //Scan File In
