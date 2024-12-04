@@ -17,10 +17,11 @@ func Day2a(m int) (int, time.Duration) {
 	}
 
 	//Setup VARS For Today
+	score := 0
 
 	//Days Program
 
-	return 0, time.Since(start)
+	return score, time.Since(start)
 }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 01B ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -34,8 +35,9 @@ func Day2b(m int) (int, time.Duration) {
 	}
 
 	//Setup VARS For Today
+	score := 0
 
 	//Days Program
 
-	return 0, time.Since(start)
+	return score, time.Since(start)
 }
