@@ -9,7 +9,7 @@ import (
 
 func Returnlines(filepathactual string, filepathtest string, m int) []string {
 	var filepath string
-	if m == 0 {
+	if m == 0 { //Choose Which Filepath To Follow
 		filepath = filepathtest
 	} else {
 		filepath = filepathactual
