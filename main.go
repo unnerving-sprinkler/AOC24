@@ -23,7 +23,7 @@ func main() {
 	day2aans, day2atime := day02.Day2a(m) //Complete
 	day2bans, day2btime := day02.Day2b(m) //Complete
 	day3aans, day3atime := day03.Day3a(m) //Complete
-	day3bans, day3btime := day03.Day3b(m) //Complete
+	day3bans, day3btime := day03.Day3b(m) //Not Complete
 
 	fmt.Printf("Day 01a | Answer: %-11d | Taking: %s\n", day1aans, day1atime)
 	fmt.Printf("Day 01b | Answer: %-11d | Taking: %s\n", day1bans, day1btime)
