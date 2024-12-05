@@ -4,6 +4,7 @@ import (
 	day01 "AOC24/programs/day01"
 	day02 "AOC24/programs/day02"
 	day03 "AOC24/programs/day03"
+	day04 "AOC24/programs/day04"
 	"fmt"
 	"os"
 	"strconv"
@@ -29,6 +30,8 @@ func main() {
 	day2bans, day2btime := day02.Day2b(m) //Complete
 	day3aans, day3atime := day03.Day3a(m) //Complete
 	day3bans, day3btime := day03.Day3b(m) //Complete
+	day4aans, day4atime := day04.Day4a(m) //Not Done
+	day4bans, day4btime := day04.Day4b(m) //Not Started
 
 	data := [][]string{
 		[]string{"Day01a", strconv.Itoa(day1aans), fmt.Sprintf("%s", day1atime)},
@@ -37,6 +40,8 @@ func main() {
 		[]string{"Day02b", strconv.Itoa(day2bans), fmt.Sprintf("%s", day2btime)},
 		[]string{"Day03a", strconv.Itoa(day3aans), fmt.Sprintf("%s", day3atime)},
 		[]string{"Day03b", strconv.Itoa(day3bans), fmt.Sprintf("%s", day3btime)},
+		[]string{"Day04a", strconv.Itoa(day4aans), fmt.Sprintf("%s", day4atime)},
+		[]string{"Day04b", strconv.Itoa(day4bans), fmt.Sprintf("%s", day4btime)},
 	}
 
 	table := tablewriter.NewWriter(os.Stdout)
