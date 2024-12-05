@@ -71,12 +71,37 @@ func Day4a(m int) (int, time.Duration) {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ DAY 04B ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 func Day4b(m int) (int, time.Duration) {
 	start := time.Now()
-	//lines := util.Returnlines("inputdata/day_04/day_04_actual.txt", "inputdata/day_04/day_04_test.txt", m)
+	lines := util.Returnlines("inputdata/day_04/day_04_actual.txt", "inputdata/day_04/day_04_test.txt", m)
 
 	//Setup VARS For Today
 	score := 0
+	var inputarray [][]string
 
 	//Days Program
+	for i := 0; i < len(lines); i++ {
+		thisline := util.Splitlines(lines[i], "")
+		inputarray = append(inputarray, thisline)
+	}
+	paddedarray := util.LazyPadding2DSlice(inputarray, 5, "*")
+
+	for i := 4; i < len(paddedarray)-4; i++ {
+		for j := 4; j < len(paddedarray[i])-4; j++ {
+			//fmt.Println(paddedarray[i][j])
+			if paddedarray[i][j] == "A" {
+
+				diagone := []string{paddedarray[i-1][j-1], paddedarray[i][j], paddedarray[i+1][j+1]}
+				diagtwo := []string{paddedarray[i+1][j-1], paddedarray[i][j], paddedarray[i-1][j+1]}
+
+				diagword1 := strings.Join(diagone, "")
+				diagword2 := strings.Join(diagtwo, "")
+
+				if (diagword1 == "MAS" || diagword1 == "SAM") && (diagword2 == "MAS" || diagword2 == "SAM") {
+					score += 1
+				}
+
+			}
+		}
+	}
 
 	return score, time.Since(start)
 }
