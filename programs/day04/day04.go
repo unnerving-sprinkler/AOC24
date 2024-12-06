@@ -4,7 +4,6 @@ package day04
 
 import (
 	util "AOC24/programs"
-	"fmt"
 	"regexp"
 	"strings"
 	"time"
@@ -64,7 +63,6 @@ func Day4a(m int) (int, time.Duration) {
 		score += len(re.FindAllString(diagwords[i], -1))
 	}
 
-	fmt.Println(diagwords)
 	return score, time.Since(start)
 }
 
@@ -86,7 +84,6 @@ func Day4b(m int) (int, time.Duration) {
 
 	for i := 4; i < len(paddedarray)-4; i++ {
 		for j := 4; j < len(paddedarray[i])-4; j++ {
-			//fmt.Println(paddedarray[i][j])
 			if paddedarray[i][j] == "A" {
 
 				diagone := []string{paddedarray[i-1][j-1], paddedarray[i][j], paddedarray[i+1][j+1]}
